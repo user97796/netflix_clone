@@ -1,0 +1,325 @@
+/****************** Developed by Manjot Ghatora *****************/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+body{
+    background-color: #000;
+}
+.header{
+    box-sizing: border-box;
+    height: 85vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0,0.6) , rgba(0, 0, 0,0.6)), url(images/header-image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* border-bottom: 100px soild rgb(248, 14, 14); */
+
+}
+.logobtn{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.img{
+    height: 40px;
+}
+.btn{
+    /* height: 40px; */
+    width: 90px;
+    padding: 10px 0;
+    border-radius: 2px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.06);
+    margin-right: 30px;
+   
+}
+.btn:nth-child(1){
+    border: 1px solid white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:nth-child(2){
+    background-color: red;
+}
+.btntxt{
+    text-decoration: none;
+    color: white;
+}
+.dropdown{
+    width: 10px;
+    height: 10px;
+    margin-left: 8px;
+}
+.hbtm{
+    height: 7px;
+    color: rgba(128, 128, 128, 0.816);
+    background-color: rgba(128, 128, 128, 0.391);
+    border: none;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    text-align: center;
+    /* padding-bottom: 80px; */
+}
+h1{
+    font-size: 50px;
+    font-weight: 550;
+    line-height: 65px;
+    margin: 10px;
+    padding: 0 50px;
+}
+h3{
+    font-size: 25px;
+    font-weight: 200;
+    padding: 0 30px;
+
+}
+p{
+    font-size: 20px;
+    padding-top: 20px;
+}
+.form{
+    margin-top: 30px;
+    display: flex;
+    /* flex: 1; */
+    align-items: center;
+    background:#fff;
+    border-radius: 4px;
+
+}
+.email{
+    /* width: 300px; */
+     /* height: 40px; */
+     margin-left: 20px;
+    flex: 1;
+    border: 0;
+    outline: 0;
+}
+.submit{
+    font-size: 16px;
+    background-color: #db0000e4;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 2px 10px none;
+
+}
+.submit:hover{
+    background-color: #db0001;
+}
+.features{
+    color: #fff;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.text-col{
+    flex-basis: 50%;
+
+}
+.text-col h2{
+    font-size: 50px;
+    font-weight: 550;
+}
+.text-col p{
+    font-size: 30px;
+    font-weight: 300;
+}
+.img-col{
+    flex-basis: 50%;
+}
+.img-col img{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+    /* height: 150vh; */
+}
+.faq h2{
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    padding: 5px;
+    max-width: 750px;
+}
+.accordion li{
+    color: white;
+    list-style: none;
+    padding: 5px;
+}
+.accordion label{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.accordion input[type='checkbox']{
+    display: none;
+
+}
+.content123{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+   
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: all 0.5s ease;
+}
+.accordion input[type='checkbox']:checked ~ label ~ .content123{
+    max-height: 600px;
+    padding: 30px 20px;
+    /* margin-bottom: 10px; */
+}
+.accordion input[type='checkbox']:checked + label::after{
+    transform: rotate(135deg);
+}
+small{
+    color: white;
+}
+.faq .form{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.footer{
+    padding: 50px 15% 10px;
+}
+.footer h3{
+    color: rgba(255, 255, 255, 0.562);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.footer .number:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+   
+.footer a{
+    color: rgba(255, 255, 255, 0.562);
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    
+
+}
+.footer a:hover{
+    text-decoration: underline;
+    
+
+
+}
+.rowfoot{
+    display: flex;
+}
+.colfoot{
+    align-items: flex-start;
+    flex-basis: 25%;
+}
+.footbtn{
+    margin: 50px 15% 10px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.562);
+    padding: 15px 20px;
+    cursor: pointer;   
+}
+.footbtn a{
+    color: rgba(255, 255, 255, 0.562);
+}
+.copyright h6{
+    color: rgba(255, 255, 255, 0.562);
+    margin: 15px 15% 10px;
+
+}
+@media screen and (max-width:768px) {
+   .logobtn img{
+        height: 30px;
+   }
+   img.dropdown{
+    height: 10px;
+    width: 15px;
+   }
+   .btn:nth-child(1){
+    margin-right: 10px;
+   }
+   .content{
+    /* padding: 0px; */
+    width: 330px;
+    margin-left: -20px;
+   }
+   .content h1{
+    font-size: 30px;
+    line-height: 37px;
+    padding: 0;
+   }
+   .content h3{
+    padding: 0;
+    width: 375px;
+    font-size: 24px;
+   }
+   .form{
+    flex-direction: column;
+    position: relative;
+    height: 40px;
+
+   }
+   .email{
+    margin-left: -155px;
+    /* margin-right: -100px; */
+    padding-right: 0px;
+   }
+   .submit{
+    position: absolute;top: 50px;
+    /* border-radius: 10px; */
+   }
+   .row{
+    flex-direction: column;
+   }
+ 
+}
+
+/****************** Developed by Manjot Ghatora *****************/
+
+
+
+
